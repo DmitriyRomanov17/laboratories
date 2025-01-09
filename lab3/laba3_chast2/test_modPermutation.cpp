@@ -18,7 +18,7 @@ TEST(TestConstructorInvalidKeyNonDigit) {
 }
 
 TEST(TestConstructorEmptyKey) {
-    CHECK_THROW(modPermutationCipher(L""), std::invalid_argument);
+    CHECK_THROW(modPermutationCipher(L"-1"), std::invalid_argument);
 }
 
 TEST(TestEncryptEmptyText) {
